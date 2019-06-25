@@ -1,13 +1,18 @@
 import JavaBeans.DataVisualizerBean;
 import JavaBeans.IDataVisualizer;
+import earlydiagnosis.IEarlyDiagnosis;
+import earlydiagnosis.ProbabilisticComponent;
 import org.encog.examples.guide.classification.*;
+
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Leftovers {
     public static void main(String[] args) {
 
         // instanciando o componente DataSet
         IDataSet dataset = new DataSetComponent();
-        dataset.setDataSource("data/zombiebig.csv");
+        dataset.setDataSource("FinalProject/data/zombiebig.csv");
 
         // instanciando o componente paciente
         IPatient aPatient = new Patient();
@@ -44,7 +49,7 @@ public class Leftovers {
         IDataVisualizer dv = new DataVisualizerBean();
         // Criando uma matriz de strings que recebe o resultado do método que ordena informações de arquivos
         // .csv em uma tabela
-        String[][] tabela = dv.sortTable("data/zombiebig.csv");
+        String[][] tabela = dv.sortTable("FinalProject/data/zombiebig.csv");
         // Chamada do método que printa a tabela de forma organizada, com uma formatação no console
         dv.plotTable(tabela);
 
@@ -68,6 +73,31 @@ public class Leftovers {
         dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "yellow_tongue",
                 "member_loss", "severe_anger", "Bubble", 0);
 
+        //componente EarlyDiagnostic
+        int i                      = 0;
+        String path                = null;
+        String sintoma             = null;
+        ArrayList<String> sintomas = new ArrayList<String>();
+        earlydiagnosis.IDataSet dataset1 = new earlydiagnosis.DataSetComponent();
+        Scanner sc                 = new Scanner(System.in);
 
+        System.out.print("Entre com o caminho do Dataset: ");
+        path = sc.next();
+        dataset1.setDataSource(path);
+
+        System.out.println("Digite os sintomas (Enter após cada um) ou digite # para terminar");
+        System.out.println("Sintoma " + i + ": ");
+        sintoma = sc.next();
+
+        while(!sintoma.equals("#")){
+            sintomas.add(sintoma);
+            i++;
+            System.out.print("Sintoma " + i + ": ");
+            sintoma = sc.next();
+        }
+        sc.close();
+
+        IEarlyDiagnosis prob = new ProbabilisticComponent(dataset1);
+        prob.calculateProbability(sintomas);
     }
 }

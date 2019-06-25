@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DataVisualizer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FinalProject/libs/DataVisualizer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

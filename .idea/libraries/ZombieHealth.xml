@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ZombieHealth">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/FinalProject/libs/ZombieHealth.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

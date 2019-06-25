@@ -21,15 +21,6 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/INeuralDoctor.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../ZombieHealth/out/artifacts/ZombieHealth_jar/ZombieHealth.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -37,7 +28,16 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="EarlyDiagnosis" level="project" />
+    <orderEntry type="library" name="DataVisualizer" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/INeuralDoctor.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="INeuralDoctor" level="project" />
-    <orderEntry type="library" name="ZombieHealth" level="project" />
   </component>
 </module>
