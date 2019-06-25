@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="INeuralDoctor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FinalProject/libs/INeuralDoctor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
