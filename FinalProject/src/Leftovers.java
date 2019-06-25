@@ -66,12 +66,12 @@ public class Leftovers {
         dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "chest_pain", "Pie", 1);
 
         // Plotando um exemplo de gráfico com análise de 2 sintomas
-        dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "paralysis",
+        dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "yellow_tongue",
                 "trembling_finger", "Scatter", 0);
 
         // Plotando um exemplo de gráfico com análise de 3 sintomas
         dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "yellow_tongue",
-                "member_loss", "severe_anger", "Bubble", 0);
+                "member_loss", "severe_anger", "Scatter3D", 0);
 
         //componente EarlyDiagnostic
         int i                      = 0;
