@@ -63,6 +63,7 @@ public class Leftovers {
         dv.plotTable(tabela);
 
         // Plotando um exemplo de gráfico com análise de 1 sintoma
+        dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "member_loss", "Pie", 1);
         dv.plotGraph("FinalProject/data/zombie-health-cases500.csv", "trembling_finger", "Pie", 1);
 
         // Plotando um exemplo de gráfico com análise de 2 sintomas
@@ -82,7 +83,7 @@ public class Leftovers {
         Scanner sc                 = new Scanner(System.in);
 
         System.out.print("Entre com o caminho do Dataset: ");
-        path = sc.next();
+2        path = sc.next();
         dataset1.setDataSource(path);
 
         System.out.println("Digite os sintomas (Enter após cada um) ou digite # para terminar");
