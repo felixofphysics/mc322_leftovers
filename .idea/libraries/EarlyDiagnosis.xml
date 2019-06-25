@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EarlyDiagnosis">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FinalProject/libs/EarlyDiagnosis.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

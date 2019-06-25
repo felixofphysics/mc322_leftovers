@@ -52,12 +52,15 @@ public interface IDataPlot {
     void plotTable(String path);
     void plotTable(Table table);
     void plotTable(String[][] matrix);
-    void plotGraph(String path, String symptom);
+    void plotGraph(String path, String symptom, String type, int case);
+    void plotGraph(String path, String symptom1, String symptom2, String type, int case);
+    void plotGraph(String path, String symptom1, String symptom2, String symptom3, String type, int case);
 }
 
 public interface IDataOrganizer {
     String[][] addPatient(String[] patient, String[][] matrix);
     String[][] sortTable(String path);
+    String[][] sortTable(String[][] matrix);
 }
 
 public interface IDataVisualizer extends IDataPlot, IDataOrganizer {
